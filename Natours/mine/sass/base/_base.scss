@@ -1,0 +1,20 @@
+/* Set all defaults for every element */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* ensure padding and border does not increase height and width of elements */ 
+    box-sizing: inherit;   
+}
+
+html {
+    /* Default browsers font size is 16px so 10/16 = 62.5% i.e. 10px */
+    font-size: 62.5%;
+} 
+
+/* Projet wide fonts def */
+body {   
+    /* see catch all uses inhert so all items default to this under the <html> tag */
+    box-sizing: border-box;
+}
