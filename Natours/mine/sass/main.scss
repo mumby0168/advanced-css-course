@@ -8,9 +8,18 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/compostion";
+@import "components/feature-box";
+@import "components/card";
+@import "components/story";
+@import "components/bg-video";
+@import "components/form";
+@import "components/_popup";
 
 @import "layouts/header";
 @import "layouts/grid";
+@import "layouts/footer";
+@import "layouts/_navigation";
 
 @import "pages/home";
 

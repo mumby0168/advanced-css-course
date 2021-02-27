@@ -1,5 +1,6 @@
 .btn {
 
+    &,
     &:link,
     &:visited {
         display: inline-block;
@@ -10,7 +11,13 @@
         transition: transform .2s;
         position: relative;
         font-size: $default-font-size;
+
+        //changes to plain out a <button>
+        border: none;
+        cursor: pointer;
     }
+
+    
     
     &:hover {
         transform: translateY(-.3rem);
@@ -23,7 +30,9 @@
         }
     }
     
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }    
@@ -57,6 +66,15 @@
         &::after {
             background-color: $color-white;
             color:  $color-grey-dark;
+        }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;            
         }
     }
 }

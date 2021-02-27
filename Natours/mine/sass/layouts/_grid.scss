@@ -7,6 +7,8 @@
     // Centering for block elements
     margin: 0 auto;    
 
+    margin-bottom: $gutter-vertical;
+
     // Everything except the last child
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
