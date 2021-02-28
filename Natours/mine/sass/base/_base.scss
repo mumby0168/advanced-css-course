@@ -10,8 +10,35 @@
 
 html {
     /* Default browsers font size is 16px so 10/16 = 62.5% i.e. 10px */
-    font-size: 62.5%;
+    font-size: 62.5%; //1rem = 10px    
+
+    //when using max width define big first then down!
+
+    @include respond(tab-lan) {
+        font-size: 56.25%; //1rem is 9px
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; //1rem is 8px
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem is 12px
+    }
 } 
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    font-size: $default-font-size;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+    @include respond(tab-port) {
+        padding: 0;   
+    }
+}
 
 /* Projet wide fonts def */
 body {   

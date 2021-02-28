@@ -14,6 +14,13 @@
                         100% 75vh, 
                         0 100%);
 
+    @include respond(tab-port) {
+        clip-path: polygon( 0 0, 
+                        100% 0, 
+                        100% 85vh, 
+                        0 100%);
+    }
+
     /* 
     This would make a triangle
     This is a good resource: https://bennettfeely.com/clippy/
